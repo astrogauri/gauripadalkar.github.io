@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gauri Padalkar | Portfolio</title>
+  <meta name="description" content="Portfolio website of Gauri Padalkar." />
+  <style>
+    :root { --max: 900px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; color: #111; line-height: 1.5; }
+    header { padding: 56px 20px 24px; background: #f6f7f9; }
+    main { padding: 28px 20px 60px; }
+    .wrap { max-width: var(--max); margin: 0 auto; }
+    h1 { margin: 0 0 8px; font-size: 34px; }
+    p { margin: 10px 0; }
+    .meta { color: #444; max-width: 70ch; }
+    .links a { display: inline-block; margin-right: 14px; margin-top: 10px; text-decoration: none; border-bottom: 1px solid #ddd; color: #111; }
+    .card { border: 1px solid #e6e6e6; border-radius: 14px; padding: 16px; margin: 14px 0; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .tag { display:inline-block; font-size: 12px; padding: 3px 8px; border:1px solid #ddd; border-radius: 999px; margin-right: 6px; margin-top: 6px; color:#333; }
+    footer { padding: 18px 20px; border-top: 1px solid #eee; color: #555; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Gauri Padalkar</h1>
+      <p class="meta">
+        <!-- EDIT THIS -->
+        Master’s student (Observatoire de Paris – PSL) · Interested in astronomical imaging, adaptive optics, and data analysis.
+      </p>
+
+      <div class="links">
+        <!-- EDIT THESE LINKS -->
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://github.com/astrogau ri" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="Gauri_Padalkar_CV.pdf" target="_blank" rel="noreferrer">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section class="card">
+        <h2>About</h2>
+        <p>
+          <!-- EDIT THIS -->
+          I work on coronagraphic simulations and image-centering methods (FFT cross-correlation, WCOG), and enjoy building clean analysis pipelines in Python.
+        </p>
+        <div>
+          <span class="tag">Python</span>
+          <span class="tag">Optics</span>
+          <span class="tag">Signal Processing</span>
+          <span class="tag">Research</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>MICADO coronagraphic simulations</h3>
+            <p>Tip-tilt grid analysis, gain factor validation, and centroiding performance under photon noise.</p>
+            <p>
+              <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer">Code</a>
+              ·
+              <a href="#" target="_blank" rel="noreferrer">Write-up</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>High-dimensional data analysis</h3>
+            <p>Practical work from Numerical Analysis: dimensionality reduction, clustering, and evaluation.</p>
+            <p>
+              <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer">Code</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Portfolio / CV site</h3>
+            <p>This website, hosted on GitHub Pages.</p>
+            <p>
+              <a href="https://github.com/gauripadal.../gauripadal...github.io" target="_blank" rel="noreferrer">Source</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br />
+          Based in: Paris, France
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="y"></span> Gauri Padalkar
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
